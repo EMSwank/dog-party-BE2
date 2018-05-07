@@ -1,0 +1,95 @@
+body {
+    display: grid;
+    /* width: auto; */
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav"
+                         "banner"
+                         "dogs"
+                         "footer";
+    text-align: center;
+}
+
+button {
+    color: #438DA6;
+    border: 2px solid #438DA6;
+    font-size: 15px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.menu {
+    text-align: right;
+}
+
+nav {
+    grid-area: nav;
+    background-color:#98DFE5;
+}
+
+nav img {
+    height: 40px;
+    text-align: left;
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    padding: 1em;
+    color: white;
+}
+
+.banner {
+    grid-area: banner;
+    display: inline-flex;
+    align-content: center;
+    height: 500px;
+    background-image: url(/Users/eliotswank/turing/2module/challenges/static_challenges/dog-party-BE2/images/park.jpg);
+    /* background-position: center; */
+    width: cover;
+    /* background-size: cover; */
+}
+
+.banner img {
+        border-radius: 50%;
+        border: 3px solid #438DA6;
+        height: 300px;
+        align-content: center;
+}
+
+.dogs {
+    grid-area: dogs;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.dogs ul {
+}
+
+.dogs img {
+    border-radius: 50%;
+    border: 2px solid #438DA6;
+    height: 200px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #438DA6;
+}
+
+footer li {
+    display: inline;
+    padding: 2%;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
